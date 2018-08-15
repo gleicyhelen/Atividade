@@ -8,25 +8,29 @@ import android.widget.LinearLayout;
 
 public class TelaActivity extends AppCompatActivity {
 
-    private int viewAdd = 14;
+    private int viewAdd = 2;
+    private String[] hint;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        hint = getResources().getStringArray(R.array.hint);
 
         setContentView(R.layout.activity_tela);
 
         LinearLayout layoutTela = findViewById(R.id.campoContainer);
 
 
-        for (int i = 0 ; i < viewAdd ; i++ ) {
+        for (int i = 0 ; i < hint.length ; i++ ) {
 
             EditText editTextLayout = new EditText(this);
             editTextLayout.setId(i);
-            editTextLayout.setHint("Digite o seu nome: " + i);
+            editTextLayout.setHint(hint[i]);
 
             layoutTela.addView(editTextLayout);
         }
+
 
 
         Button botaoEnviar = new Button(this);

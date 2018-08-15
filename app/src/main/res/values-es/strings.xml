@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="hint">
+             <item> Introduzca su nombre </item>
+             <item> Escriba su Apellido </item>
+             <item> Introduzca su fecha de nacimiento </item>
+    </array>
+
+</resources>

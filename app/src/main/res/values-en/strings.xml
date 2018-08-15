@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="hint">
+             <item> Enter your name </item>
+             <item> Enter your Last Name </item>
+             <item> Enter your date of birth </item>
+
+    </array>
+</resources>
+

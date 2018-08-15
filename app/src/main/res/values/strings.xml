@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Atividade</string>
+
+    <array name="hint">
+
+        <item>Digite seu nome</item>
+        <item>Digite seu Sobrenome</item>
+        <item>Digite sua data de nascimento</item>
+
+
+
+
+    </array>
 </resources>
