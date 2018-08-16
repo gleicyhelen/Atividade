@@ -8,8 +8,9 @@ import android.widget.LinearLayout;
 
 public class TelaActivity extends AppCompatActivity {
 
-    private int viewAdd = 2;
+    private int viewAdd = 15;
     private String[] hint;
+    private String[] tags;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,8 @@ public class TelaActivity extends AppCompatActivity {
         hint = getResources().getStringArray(R.array.hint);
 
         setContentView(R.layout.activity_tela);
+
+        tags = getResources().getStringArray(R.array.tags);
 
         LinearLayout layoutTela = findViewById(R.id.campoContainer);
 
@@ -30,6 +33,10 @@ public class TelaActivity extends AppCompatActivity {
 
             layoutTela.addView(editTextLayout);
         }
+
+
+
+         BDClientes.inserirCliente(cliente);
 
 
 
