@@ -2,6 +2,7 @@ package atividade.exemplo.gleicy.atividade;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -35,13 +36,27 @@ public class TelaActivity extends AppCompatActivity {
         }
 
 
-
-         BDClientes.inserirCliente(cliente);
-
-
-
         Button botaoEnviar = new Button(this);
         botaoEnviar.setText("Enviar");
+
+        botaoEnviar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                LinearLayout primeiroLayout = findViewById(R.id.campoContainer);
+                primeiroLayout.setVisibility(View.GONE);
+
+                LinearLayout resultadoLayout = findViewById(R.id.campoResultado);
+                resultadoLayout.setVisibility(View.VISIBLE);
+
+                String resultado = "";
+
+                Cliente cliente = new Cliente();
+
+
+            }
+        });
+
 
         layoutTela.addView(botaoEnviar);
     }
