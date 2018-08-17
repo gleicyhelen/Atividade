@@ -12,6 +12,8 @@ public class Cliente {
     private String bairro;
 
 
+
+
     public String getNome() {
         return nome;
     }
@@ -74,6 +76,38 @@ public class Cliente {
 
     public void setBairro(String bairro) {
         this.bairro = bairro;
+    }
+
+
+    public void setarCampo(String nomeDoCampo, String valorDoCampo) {
+
+        switch (nomeDoCampo) {
+
+            case "nome":
+                setNome(valorDoCampo);
+                break;
+            case "sobrenome":
+                setSobrenome(valorDoCampo);
+                break;
+            case "dataNascimento":
+                setDataNascimento(valorDoCampo);
+                break;
+            case "cpf":
+                setCpf(valorDoCampo);
+                break;
+            case "rg":
+                setRg(valorDoCampo);
+                break;
+            case "estado":
+                setEstado(valorDoCampo);
+                break;
+            case "cidade":
+                setCidade(valorDoCampo);
+                break;
+            case "bairro":
+                setBairro(valorDoCampo);
+                break;
+        }
     }
 }
 
