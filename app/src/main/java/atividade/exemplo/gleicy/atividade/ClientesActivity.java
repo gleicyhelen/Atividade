@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ClientesActivity extends AppCompatActivity {
 
-    List<Cliente> clientes;
+    List <Cliente> clientes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,8 @@ public class ClientesActivity extends AppCompatActivity {
             View v = inflater.inflate(R.layout.item_cliente, null, false);
 
             ((TextView)v.findViewById(R.id.Nome)).setText(cliente.getNome());
-            ((LinerarLayout)) findViewByID(R.id.campoContainer).addView(v);
+
+            ((LinerarLayout)findViewByID(R.id.campoContainer)).addView(v);
 
         }
     }

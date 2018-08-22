@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class TelaActivity extends AppCompatActivity {
 
     private int viewAdd = 15;
@@ -21,13 +23,10 @@ public class TelaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         hint = getResources().getStringArray(R.array.hint);
-
         setContentView(R.layout.activity_tela);
-
         tags = getResources().getStringArray(R.array.tags);
 
         LinearLayout layoutTela = findViewById(R.id.campoContainer);
-
 
         for (int i = 0 ; i < hint.length ; i++ ) {
 
@@ -68,25 +67,27 @@ public class TelaActivity extends AppCompatActivity {
                     }
                 }
 
-                clientes.inserirCliente(cliente);
+               // clientes.inserirCliente(cliente);
 
-                ((TextView) findViewById(R.id.campoResultado)).setText(resultado);
+               // ((TextView) findViewById(R.id.campoResultado)).setText(resultado);
 
             }
         });
 
-        ((Button) findViewById(R.id.btCliente)).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent it = new Intent(TelaActivity.this,ClientesActivity.class);
-                    startActivity(it);
+       /* ((Button) findViewById(R.id.botaoEnviar)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(TelaActivity.this,ClientesActivity.class);
+                startActivity(it);
 
-                    )}
-
-
-
-        layoutTela.addView(botaoEnviar);
+            }
 
 
+
+         layoutTela.addView(botaoEnviar);*/
+
+       
+
+    }
 }
 

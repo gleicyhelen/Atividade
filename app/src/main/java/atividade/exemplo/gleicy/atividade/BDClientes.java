@@ -1,27 +1,31 @@
 package atividade.exemplo.gleicy.atividade;
 
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class BDClientes {
+public class BDClientes extends AppCompatActivity {
 
     private List<Cliente> clientes;
 
-
-    public BDClientes() {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_bdclientes);
 
         clientes = new ArrayList<>();
-    }
 
-    public void inserirCliente(Cliente cliente){
+        public void inserirCliente(Cliente clientes){
 
-        clientes.add(cliente);
+            clientes.add(clientes);
 
-    }
+        }
 
-    public List<Cliente> recuperarClientes(){
+        public List<Cliente> recuperarClientes(){
 
-        return clientes;
-    }
+            return clientes;
+        }
 
 }
